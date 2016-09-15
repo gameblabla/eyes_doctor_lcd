@@ -52,6 +52,8 @@ int main ( int argc, char* argv[] )
 				{
 					Close_video();
 					timey = 0;
+					timey_blink_sub = 0;
+					timey_blink = 0;
 					mode = 0;
 				}
 				Update_video();
