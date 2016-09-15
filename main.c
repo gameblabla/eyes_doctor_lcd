@@ -11,8 +11,8 @@
 */
 
 unsigned long long timey = 0;
-unsigned long long timey_blink = 0;
-unsigned long long timey_blink_sub = 0;
+unsigned long timey_blink = 0;
+unsigned long timey_blink_sub = 0;
 int mode = 0;
 static unsigned long int next = 1;
 
