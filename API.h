@@ -3,8 +3,12 @@ extern struct input BUTTON;
 extern const unsigned short FPS;
 extern char* game_name;
 
+extern int scr_w, scr_h;
+
 extern void Init_video();
 extern void Close_video();
+
+extern void startup();
 
 extern void Load_Image(unsigned short a, const char* directory);
 extern void Copy_Image(unsigned short a, unsigned short i);
@@ -14,7 +18,7 @@ extern void Put_sprite(unsigned short a, short x, short y, unsigned short w, uns
 
 extern void Draw_Pixel(unsigned short x, unsigned short y, unsigned char R, unsigned char G, unsigned char B);
 
-extern void Draw_Rect(unsigned short x, unsigned short y, unsigned short width, unsigned short height, unsigned char R, unsigned char G, unsigned char B);
+extern void Draw_Rect(unsigned short x, unsigned short y, unsigned short w, unsigned short h, unsigned char R, unsigned char G, unsigned char B, unsigned char alpha);
 
 /* 
  * Could cause problems on some platforms
