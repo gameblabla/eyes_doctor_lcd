@@ -66,7 +66,7 @@ int main ( int argc, char* argv[] )
 			break;
 			case 1:
 				Clear_screen();
-				Draw_Rect(0, 0, scr_w ,scr_h, rand_a_b(0,255), rand_a_b(0,255), rand_a_b(0,255), 255);
+				Draw_Rect(0, 0, scr_w ,scr_h, 0, 255, 0, 255);
 				timey++;
 				if (timey > 1200)
 				{
@@ -83,13 +83,13 @@ int main ( int argc, char* argv[] )
 			case 0:
 				timey++;
 				timey_blink++;
-				if (timey > 54000/3)
+				if (timey > 54000)
 				{
 					timey = 0;
 					mode = 1;
 					Init_video();
 				}
-				if (timey_blink > 3600/2)
+				if (timey_blink > 3600)
 				{
 					timey_blink = 0;
 					mode = 2;
